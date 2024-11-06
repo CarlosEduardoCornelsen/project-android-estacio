@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.application'
+    id 'com.github.spotbugs' version '4.5.3' // Apply SpotBugs plugin
+}
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.example.budgetmanager"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation 'com.github.spotbugs:spotbugs-annotations:4.5.3'
+    // Add other dependencies here
+}
+
+// SpotBugs configuration (if needed)
+spotbugs {
+    toolVersion = '4.5.3'
+}
